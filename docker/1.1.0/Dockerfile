@@ -11,6 +11,7 @@ RUN apt-get update && \
       openjdk-17-jdk-headless \
       sqlite3 \
       xz-utils \
+      maven \
       zlib1g-dev && \
     rm -rf /var/lib/apt/lists/*
 
