@@ -57,6 +57,14 @@ RUN cd /infer && \
 FROM debian:bullseye-slim AS executor
 
 RUN apt-get update && apt-get install --yes --no-install-recommends sqlite3
+RUN apt-get update && \
+    apt-get install --yes --no-install-recommends \
+      curl \
+      libc6-dev \
+      openjdk-11-jdk-headless \
+      sqlite3 \
+      xz-utils \
+      zlib1g-dev 
 
 # Get the infer release
 COPY --from=compilator /infer-release/usr/local /infer
