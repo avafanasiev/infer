@@ -21,7 +21,7 @@ RUN apt-get update && \
       sqlite3 \
       make \
       opam \
-      openjdk-11-jdk-headless \
+      openjdk-17-jdk-headless \
       patch \
       patchelf \
       pkg-config \
